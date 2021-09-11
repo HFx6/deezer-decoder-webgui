@@ -6,7 +6,7 @@ const SelectComponent = dynamic(() => import('../components/select'));
 const PopoutComponent = dynamic(() => import('../components/popout'));
 
 // wake up heroku server
-fetch("https://deezcors.herokuapp.com/");
+//fetch("https://deezcors.herokuapp.com/");
 
 var handleCollection = async function(trackValue, arlValue) {
   return new Promise(resolve => {
