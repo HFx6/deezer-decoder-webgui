@@ -178,7 +178,7 @@ var getTracks = async function(arl){
                       </React.Fragment>
                       
                     }
-                    <audio id="player" onEnded={() => setIsPlaying(current => !current)} src={data[5]}></audio>
+                    <audio id="player" crossOrigin="anonymous" onEnded={() => setIsPlaying(current => !current)} src={data[5]}></audio>
                   </p>
                   ):
                     null
