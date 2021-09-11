@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    --block-main: #f1f3f4; 
+    --hover-color: #dcdcdc;
+    --input: #39383D;
+    transition: background-color 400ms;
+}
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+    --block-main: #232229;
+    --hover-color: #403e46;
+    --input: #39383D;
+    transition: background-color 400ms;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        --text-color: #eee;
+        --bkg-color: #121212;
+        --block-main: #232229;
+        --hover-color: #403e46;
+        --input: #39383D;
+    }
+    body.light-theme {
+            --text-color: #222;
+            --bkg-color: #fff;
+            --block-main: #f1f3f4;
+            --hover-color: #dcdcdc; 
+            --input: #39383D;
+        }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: var(--bkg-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    box-sizing:border-box;
+    background-color: var(--input);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;
+    height: 49.6px;
+}
+
+button:hover{
+    background-color: var(--hover-color);
+}
+
+#bulkqlsel:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-left: 2rem;
+    box-sizing:border-box;
+    background-color: var(--input);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    margin-bottom: 10px;
+} 
+
+#bulkqlsel{
+    padding-left: 2rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    box-sizing:border-box;
+    background-color: var(--input);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+/* #cookie{
+    margin-bottom: 10px;
+} */
+
+#container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+#inputcontainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+#selectcontainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.module-border-wrap {
+    padding: 6px;
+    border-radius: 10px;
+    position: relative;
+    background-image: url('../public/gradient.png');
+    background-size: 100% 100%;
+}
+  
+.module {
+    background-color: var(--block-main);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 500px;
+    position: relative;
+}
+
+.pullout{
+    background-color: #39383D;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: -23px !important;
+    overflow-y: scroll;
+    max-height: 380px;
+    margin: 0;
+}
+.box {
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+/* .selection{
+    height: 60px;
+} */
